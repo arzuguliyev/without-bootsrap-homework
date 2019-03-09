@@ -1,0 +1,359 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.logo a
+{
+  color:#3498db;  
+  font-size: 1.25em;  
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: none;
+}
+
+.logo span
+{
+    font-weight: bold;
+    font-size: .8em;
+    color: #FFF;
+    
+}
+
+#menu-icon-link
+{
+ display: inline-block;   
+ text-decoration: none;
+ color: white;
+ float: right; 
+ transition: .3s
+}
+
+#menu-icon-link:hover
+{
+   color: skyblue;
+}
+
+/* slide menu container */
+aside
+{
+   
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transition: .7s;
+   
+}
+
+
+
+/* menu close icon */
+aside > i
+{
+    display: inline-block;
+    font-size: 1.2em;
+    color: #FFF;
+    transition: .3s;
+    margin-left: 16%;
+    margin-top: 1%;
+}
+
+aside > i:hover
+{
+  color: skyblue;
+}
+
+/* menu list */
+aside > ul{list-style: none;}
+aside ul li{padding-top: 30px;}
+aside ul li a 
+{
+  display: inline-block;
+  width: 15%;
+  color: white;
+  font-family: "Scope One", serif;
+  font-size: 13pt;
+  font-weight: 300;
+  text-decoration: none;
+  padding-bottom: 1%;
+  border-bottom: 1px solid white;
+  transition: .3s;
+}
+aside ul li a:hover
+{
+    color: skyblue;
+    border-bottom: 1px solid skyblue;
+}
+
+
+#banner
+{
+    position: absolute;
+    
+    top: 0;
+    width: 100%;
+    z-index: -9999;
+}
+
+
+#banner img{
+    position: relative;
+    width: 100%;
+    height: 80vh;}
+
+
+.overlay
+{
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    opacity: .5;
+}
+
+
+
+
+.banner-content
+{
+height:75vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+.banner-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.banner-container h1
+{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-bottom: .25em;
+    color: #FFF;
+}
+
+.banner-container p
+{
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.75em;
+    padding-bottom: .25em;
+    text-align: justify;
+}
+
+/* cards */
+
+.card-img
+{
+   width: 100%;
+   border-radius: 50%;
+   
+}
+
+.card-img img
+{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid whitesmoke;
+}
+
+.card-text > h3 
+{
+    font-size: 1.75em;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    color: #000;
+}
+
+
+.card-text
+{
+    
+}
+
+.card-text > p 
+{
+ color: #999;   
+ font-family: "Scope One", serif;
+ font-weight: 300;
+ line-height: 1.65;
+ text-align: justify;
+}
+
+#card-1
+{
+    padding: 0 0 3% 0;
+}
+
+.card-2-background
+{
+    background-color: rgb(52, 152, 219);
+    padding: 3% 0 3% 0;
+}
+
+#card-2  h3
+{
+    color: #FFF;
+}
+
+#card-2 p 
+{
+    color: white;
+}
+
+#card-2 img
+{
+    border:none;
+}
+
+#card-2  .card-img
+{
+    box-shadow: 0px 0px 0px 7px #3498db, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
+}
+
+/* card group started */
+#card-group-header
+{
+    padding: 2.5em 0 2.5em 0;
+    text-align: center;
+}
+#card-group-header span
+{
+    color: gray;
+}
+
+.card-group-element
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-group-element img
+{
+   border-radius: 50%;
+   margin: 0 0 2em 0;
+}
+
+.card-group-element span
+{
+    color: grey;
+    text-align: center;
+    font-size: 15px;
+    margin: 0 0 2em 0;
+}
+
+/* footer */
+
+#socialmedia
+{
+   
+}
+
+#socialmeadia-list
+{
+  margin-top: 10%;  
+  list-style: none;
+  text-align: center;
+}
+
+#socialmeadia-list li 
+{
+  display: inline;
+  padding: 0 3% 0 3%;
+}
+
+#socialmeadia-list li a
+{
+    display: inline-block;
+    color: grey;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid  silver;
+    border-radius: 50%;
+}
+
+#socialmeadia-list li a:hover
+{
+  color: lightslategray;
+}
+
+#socialmeadia-list li a i 
+{
+    display: inline-block;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    line-height: 44px;
+    border: 1px solid  silver;
+    border-radius: 50%;
+}
+
+#socialmeadia-list + span
+{
+    display: block;
+    color: grey;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+
+
+
+/* media  */
+
+@media only screen and (max-width: 768px)
+{
+
+
+.banner-content
+{
+    
+}    
+
+.banner-container h1
+{
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    margin-bottom: .25em;
+    color: #FFF;
+}
+
+.banner-container p
+{
+    color: rgba(255, 255, 255, 0.85);
+    font-size: .7em;
+    text-align: justify;
+    padding-bottom: .25em;
+    
+}
+
+
+
+}
+
+@media only screen and (max-width: 769px ), (max-width:832px)
+{
+.banner-container h1
+{
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color:  white;
+}
+}
